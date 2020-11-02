@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="piyush.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="togler-icon">
+      <a href="#"class="menuline"onclick="Openbar()"><img src="hamburger-icon.png"alt=""></a>
+    </div>
+    <div class="sidebar" id="mySidebar" style="display:none">
+      <!-- <span class = "menuline"onclick="Openbar()"><img src="hamburger-icon.png"alt=""></span> -->
+      <a href="javascript:void(0)"class="closebtn"onclick="Closebar()"><img src="close-btn.png"alt=""></a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <a href="#">Home</a>
+      <a href="#">Contect</a>
+      <a href="#">About</a>
+    </div>
+    <div class="container" id="container">
+      <div class="left">
+
+      </div>
+      <div class="right">
+        <div class="formBox">
+          <h1>Registeration Info</h1>
+          <form>
+            <input type="text" name="" value=""placeholder="Name" required><br>
+            <input type="text" name="" value=""placeholder="Email"><br>
+            <input type="text" name="" value=""placeholder="phone"><br>
+            <input placeholder="Birthdate" class="textbox-n" type="text" onfocus="(this.type='date')" id="date"><br>
+            <input type="password" name="" value=""placeholder="Password"><br>
+            <input type="password" name="" value=""placeholder="Confirm Password"><br>
+            <button class="button-add" type="button" name="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+    function Openbar() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+      }
+      function Closebar() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      document.addEventListener("click", function(e){
+        Closebar();
+      })
+    // function Openbar() {
+    //   document.getElementById("mySidebar").style.display = "block";
+    // }
+    // function Closebar() {
+    //   document.getElementById("mySidebar").style.display = "none";
+    // }
+    </script>
+  </body>
+</html>
